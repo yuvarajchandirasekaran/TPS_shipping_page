@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>TPS shipping page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content flex-wrap">
+                <div class="secure-shop flex-wrap">
+                    <span class="material-symbols-outlined">lock</span>
+                    <div class="txt-content">
+                        <p class="bold-txt">QUICK & EASY CHECKOUT</p>
+                        <p class="light-txt">100% SECURE SHOPPING</p>
+                    </div>
+                </div>
+                <div class="logo-sec">
+                    <a href="#">
+                        <img src="images/header/header-logo.png" alt="header logo">
+                    </a>
+                </div>
+                <div class="contact-sec flex-wrap">
+                    <div class="contact-details">
+                        <a href="#" class="flex-wrap">
+                            <span class="material-symbols-outlined">phone_enabled</span>
+                            <p class="ph-no">(800) 878-2822</p>
+                        </a>
+                        <p class="availabilty">Mon-Fri | 8-5 Central</p>
+                    </div>
+                    <div class="sign-in-option">
+                        <a href="#" class="flex-wrap">
+                            <span class="material-symbols-outlined">person</span>
+                            <p class="sign-in-txt">SIGN IN</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-banner">
+            <img src="images/header/bottom-banner.png" alt="header bottom-banner">
+        </div>
+    </header>
+    <main class="body-container">
+        <div class="left-side-content">
+            <section class="shipping-sec">
+                <div class="customer-detail opened">
+                    <div class="heading-sec flex-wrap">
+                        <div class="serial-no flex-wrap">
+                            <span>1</span>
+                        </div>
+                        <h1 class="heading-txt">Customer</h1>
+                    </div>
+                    <div class="hided-content">
+                        <p class="ckt-as-guest"><strong>Checking out as a Guest?</strong>You’ll be able to save your
+                            details to create an account with us later.</p>
+                        <div class="mail-inputs">
+                            <label for="Email" class="mail-label">Email Address:</label><br>
+                            <input type="text" class="email-input-box">
+                            <a href="#" class="continue-btn">Continue as Guest</a><br>
+                            <div class="flex-wrap">
+                                <input type="checkbox" class="newsltr-ceckbox">
+                                <span class="newsltr-sbrc">Subscribe to our newsletter.</span>
+                            </div>
+                        </div>
+                        <p class="exist-user-login">Already have an account? <a href="#">Sign in now</a> </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="shipping-detail closed">
+                    <div class="heading-sec flex-wrap">
+                        <div class="serial-no flex-wrap">
+                            <span>2</span>
+                        </div>
+                        <h1 class="heading-txt">Shipping</h1>
+                    </div>
+                    <div class="hided-content">
+                        <!-- shipping contet rendered here -->
+                    </div>
+                </div>
+                <hr>
+                <div class="billing-detail closed">
+                    <div class="heading-sec flex-wrap">
+                        <div class="serial-no flex-wrap">
+                            <span>3</span>
+                        </div>
+                        <h1 class="heading-txt">Billing</h1>
+                    </div>
+                    <div class="hided-content">
+                        <!-- billig contet rendered here -->
+                    </div>
+                </div>
+                <hr>
+                <div class="payment-detail closed">
+                    <div class="heading-sec flex-wrap">
+                        <div class="serial-no flex-wrap">
+                            <span>4</span>
+                        </div>
+                        <h1 class="heading-txt">Payment</h1>
+                    </div>
+                    <div class="hided-content">
+                        <!-- payment contet rendered here -->
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <section class="other-services">
+                <div class="service-container flex-wrap">
+                    <div class="free-ship-cont">
+                        <div class="policy-img-cont">
+                            <img src="images/other-policy/free shipping.png" alt="parcel image">
+                        </div>
+                        <h4>Free shipping $300!</h4>
+                        <p class="detailed-txt">Orders under $300 have a Flat
+                            Shipping Rate of $20. Most orders arrive within 3-7 business days.
+                        </p>
+                        <a href="#">> See Details</a>
+                    </div>
+                    <div class="help-center-cont">
+                        <div class="policy-img-cont">
+                            <img src="images/other-policy/help center.png" alt="customer care">
+                        </div>
+                        <h4>We’re Here to Help!</h4>
+                        <p class="detailed-txt">Questions? Call our Customer Service Team at (800) 878-2822. Our
+                            hours are
+                            Mon-Fri 8am-5pm CST.</p>
+                    </div>
+                    <div class="return-policy-cont">
+                        <div class="policy-img-cont">
+                            <img src="images/other-policy/return policy.png" alt="return image">
+                        </div>
+                        <h4>Return Policy</h4>
+                        <p class="detailed-txt">Most products may be returned for credit if they are in new, salable
+                            condition with original packaging.
+                        </p>
+                        <a href="#">> See Details</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="right-side-content">
+            <section class="order-summary">
+                <div class="summary-container ">
+                    <div class="heading flex-wrap">
+                        <h2>Order Summary</h2>
+                        <a href="#">Edit Cart</a>
+                    </div>
+                    <hr>
+                    <div class="inner-content">
+                        <div class="item-count">
+                            <h4>2Items</h4>
+                        </div>
+                        <div class="product 1">
+                            <div class="product flex-wrap">
+                                <!-- prd means product  -->
+                                <div class="prd-image">
+                                    <img src="images/order-summary/Plastic vials.png" alt="plastic vials">
+                                </div>
+                                <div class="prd-details">
+                                    <h5 class="prd-name">1 x TPS Reversible Cap Plastic Vials</h5>
+                                    <div class="color-cont flex-wrap">
+                                        <span class="color">Color:</span>
+                                        <p>Amber</p>
+                                    </div>
+                                    <div class="size-cont flex-wrap">
+                                        <span class="size">Size:</span>
+                                        <p>8 Dram</p>
+                                    </div>
+                                </div>
+                                <div class="price-cont">
+                                    <h2 class="price-txt">$56.54</h2>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="product 2">
+                            <div class="product flex-wrap">
+                                <!-- prd means product  -->
+                                <div class="prd-image">
+                                    <img src="images/order-summary/graduated cylinders.jpg" alt="graduate cylinder">
+                                </div>
+                                <div class="prd-details">
+                                    <h5 class="prd-name">6 x TPX® Graduated Cylinders</h5>
+                                    <span class="color">Size:</span>
+                                    <p>100 ml</p>
+                                    <span class="size">Type:</span>
+                                    <p>Plastic</p>
+                                </div>
+                                <div class="price-cont">
+                                    <h2 class="price-txt">$102.12</h2>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="cost-div">
+                            <div class="sub-total-cost">
+                                <span class="subtotal-txt">Subtotal:</span>
+                                <p class="price">$158.66</p>
+                            </div>
+                            <div class="shipping-cost">
+                                <span class="subtotal-txt">Shipping:</span>
+                                <p class="price">- -</p>
+                            </div>
+                            <div class="tax-cost">
+                                <span class="subtotal-txt">Tax:</span>
+                                <p class="price">$0.00</p>
+                            </div>
+                        </div>
+                        <div class="coupon-div">
+                            <a href="#">Coupon/Gift Certificate</a>
+                        </div>
+                        <hr>
+                        <div class="grand-total">
+                            <span class="total-txt">Total(USD)</span>
+                            <p class="total-amt">$158.66</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom-cont">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copy-right">
+                © 2022 Total Pharmacy Supply. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
