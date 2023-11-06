@@ -42,647 +42,660 @@ img {
     margin: 0 auto;
 }
 
-.header {
-    .material-symbols-outlined {
-        font-variation-settings:
-            'FILL' 1,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
-    }
+.checkout-page-container {
+    .header {
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
 
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-        .header-content {
-            width: 100%;
-            padding: 17px 27px 0;
+            .header-content {
+                width: 100%;
+                padding: 17px 27px 0;
 
-            @media screen and (max-width:1279px) {
-                padding: 17px 20px 0px;
-            }
-
-            @media screen and (max-width:768px) {
-                padding: 17px 17px 0;
-            }
-
-            @media screen and (max-width:630px) {
-                padding: 17px 15px 0px;
-            }
-
-            span {
-                margin-right: 5px;
-                color: @secondary-font-color;
-
-                @media screen and (max-width: 375px) {
-                    margin-right: 0;
+                @media screen and (max-width:1279px) {
+                    padding: 17px 20px 0px;
                 }
-            }
 
-            .secure-shop {
-                .txt-content {
-                    color: @primary-font-color;
-
-                    @media screen and(max-width:630px) {
-                        display: none;
-                    }
-
-                    .bold-txt {
-                        font: bold 14px/17px @rokkit;
-                    }
-
-                    .light-txt {
-                        font: normal 10px/15px @poppins;
-                        letter-spacing: 1px;
-                    }
+                @media screen and (max-width:768px) {
+                    padding: 17px 17px 0;
                 }
-            }
 
-            .logo-sec {
-                max-width: 100%;
-
-                @media screen and (max-width:375px) {
-                    width: 110px;
+                @media screen and (max-width:630px) {
+                    padding: 17px 15px 0px;
                 }
-            }
 
-            .contact-sec {
-                align-items: baseline;
-
-                .contact-details {
-                    margin-right: 45px;
-
-                    @media screen and (max-width: 768px) {
-                        margin-right: 42px;
-                    }
-
-                    @media screen and (max-width:655px) {
-                        margin-right: 15px;
-                    }
-
-                    @media screen and (max-width:630px) {
-                        margin-right: 35px;
-                    }
+                span {
+                    margin-right: 5px;
+                    color: @secondary-font-color;
 
                     @media screen and (max-width: 375px) {
-                        margin-right: 20px;
+                        margin-right: 0;
                     }
+                }
 
-                    a {
-                        text-decoration: none;
+                .secure-shop {
+                    .txt-content {
                         color: @primary-font-color;
 
-                        .ph-no {
-                            font: normal 15px/23px @poppins;
-                            letter-spacing: 2px;
-
-                            @media screen and (max-width: 768px) {
-                                letter-spacing: 0px;
-                            }
-
-                            @media screen and (max-width: 630px) {
-                                display: none;
-                            }
-                        }
-                    }
-
-                    .availabilty {
-                        font: normal 10px/16px @poppins;
-                        text-align: center;
-
-                        @media screen and (max-width: 630px) {
+                        @media screen and(max-width:630px) {
                             display: none;
                         }
-                    }
-                }
 
-                .sign-in-option {
-                    a {
-                        text-decoration: none;
-                        color: @primary-font-color;
+                        .bold-txt {
+                            font: bold 14px/17px @rokkit;
+                        }
 
-                        .sign-in-txt {
-                            font: normal 15px/23px @poppins;
+                        .light-txt {
+                            font: normal 10px/15px @poppins;
                             letter-spacing: 1px;
-
-                            @media screen and (min-width: 768px) {
-                                letter-spacing: 0px;
-                            }
-
-                            @media screen and (max-width: 630px) {
-                                display: none;
-                            }
                         }
                     }
                 }
-            }
-        }
-    }
 
-    .header-bottom-banner {
-        max-width: 100%;
-        position: relative;
-        height: 10px;
+                .logo-sec {
+                    max-width: 100%;
 
-        img {
-            height: 10px;
-        }
-    }
-}
-
-.body-container {
-    display: flex;
-
-    .left-side-content {
-        flex-basis: 73.5%;
-        padding: 40px 42px 57px 46px;
-
-        @media screen and (max-width:1279px) {
-            padding: 40px 30px 50px;
-        }
-
-        @media screen and (max-width:1023px) {
-            padding: 20px 17px 70px;
-        }
-
-        @media screen and (max-width:980px) {
-            flex-basis: 100%;
-        }
-
-        @media screen and (max-width:767px) {
-            padding: 30px 20px;
-        }
-
-        @media screen and (max-width:375px) {
-            padding: 20px 10px;
-        }
-
-
-        .shipping-sec {
-
-            &>div {
-                padding: 31px 0px 30px;
-                border-bottom: 1px solid @primary-font-color;
-
-                @media screen and (max-width:767px) {
-                    padding: 25px 0px;
-
-                }
-
-                .heading-sec {
-                    justify-content: flex-start;
-
-                    .serial-no {
-                        background-color: @secondary-font-color;
-                        height: 38px;
-                        width: $height;
-                        border-radius: 50%;
-                        justify-content: center;
-                        margin-right: 15px;
-
-                        span {
-                            font: bold 20px/32px @rokkit;
-                            color: @primary-color;
-                        }
-                    }
-
-                    .heading-txt {
-                        font: bold 24px/35px @rokkit;
-                        color: @primary-font-color;
-                    }
-
-                }
-            }
-
-            &>.opened {
-
-                .hided-content {
-                    padding: 22px 0px 0px 20px;
-
-                    @media screen and (max-width:767px) {
-                        padding: 22px 0px 0px 0px;
+                    @media screen and (max-width:375px) {
+                        width: 110px;
                     }
                 }
-            }
 
-            .customer-detail {
-                padding-left: 10px;
+                .contact-sec {
+                    align-items: baseline;
 
-                @media screen and (max-width: 767px) {
-                    padding-left: 0;
-                    padding-top: 0;
-                }
+                    .contact-details {
+                        margin-right: 45px;
 
-                .hided-content {
-                    .ckt-as-guest {
-                        font: normal 16px/24px @poppins;
-                        color: @primary-font-color;
-
-                        @media screen and (max-width: 1023px) {
-                            padding-right: 62px;
+                        @media screen and (max-width: 768px) {
+                            margin-right: 42px;
                         }
 
-                        @media screen and (max-width: 767px) {
-                            padding-right: 0;
-                            font: normal 14px/22px @poppins;
-                        }
-                    }
-
-                    .mail-inputs {
-                        margin: 23px 0px 37px;
-
-                        @media screen and (max-width:767px) {
-                            margin: 20px 0px;
+                        @media screen and (max-width:655px) {
+                            margin-right: 15px;
                         }
 
-                        .mail-label {
-                            font: bold 14px/20px @poppins;
-                            color: @secondary-font-color;
-                            letter-spacing: 1px;
-
-                            @media screen and (max-width: 767px) {
-                                font: bold 12x/20px @poppins;
-
-                            }
+                        @media screen and (max-width:630px) {
+                            margin-right: 35px;
                         }
 
-                        .email-input-box {
-                            width: 33.5%;
-                            height: 40px;
-                            border: 1px solid #C7C7C7;
-                            margin-right: 10px;
-
-                            &:focus {
-                                outline: none;
-                            }
-
-                            @media screen and (max-width: 1279px) {
-                                width: 40.5%;
-                            }
-
-                            @media screen and (max-width: 1023px) {
-                                width: 48.2%;
-                            }
-
-                            @media screen and (max-width: 500px) {
-                                width: 100%;
-                                margin-right: 0;
-                                margin-bottom: 15px;
-                            }
-                        }
-
-                        .continue-btn {
-                            text-decoration: none;
-                            font: bold 16px/21px @rokkit;
-                            color: @primary-color;
-                            padding: 11px 24px;
-                            background-color: #009191;
-
-                            @media screen and (max-width: 1279px) {
-                                padding: 11px 12px;
-                            }
-
-                            @media screen and (max-width: 1023px) {
-                                padding: 11px 24px;
-                            }
-
-
-                        }
-
-                        div {
-                            justify-content: flex-start;
-
-                            @media screen and (max-width:767px) {
-                                margin-top: 20px;
-                            }
-
-                            .newsltr-ceckbox {
-                                height: 16px;
-                                width: $height;
-                                margin-right: 10px;
-                            }
-
-                            .newsltr-sbrc {
-                                font: normal 14px/40px @poppins;
-                                color: @primary-font-color;
-
-                                @media screen and (max-width:767px) {
-                                    font: normal 14px/35px @poppins;
-                                }
-                            }
-                        }
-                    }
-
-                    .exist-user-login {
-                        font: bold 16px/35px @poppins;
-                        color: @primary-font-color;
-
-                        @media screen and (max-width:767px) {
-                            font: bold 14px/35px @poppins;
+                        @media screen and (max-width: 375px) {
+                            margin-right: 20px;
                         }
 
                         a {
-                            color: #009191;
+                            text-decoration: none;
+                            color: @primary-font-color;
+
+                            .ph-no {
+                                font: normal 15px/23px @poppins;
+                                letter-spacing: 2px;
+
+                                @media screen and (max-width: 768px) {
+                                    letter-spacing: 0px;
+                                }
+
+                                @media screen and (max-width: 630px) {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .availabilty {
+                            font: normal 10px/16px @poppins;
+                            text-align: center;
+
+                            @media screen and (max-width: 630px) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .sign-in-option {
+                        a {
+                            text-decoration: none;
+                            color: @primary-font-color;
+
+                            .sign-in-txt {
+                                font: normal 15px/23px @poppins;
+                                letter-spacing: 1px;
+
+                                @media screen and (min-width: 768px) {
+                                    letter-spacing: 0px;
+                                }
+
+                                @media screen and (max-width: 630px) {
+                                    display: none;
+                                }
+                            }
                         }
                     }
                 }
-            }
-
-            .payment-detail {
-                border: none;
             }
         }
 
-        .other-services {
-            margin-bottom: 57px;
+        .header-bottom-banner {
+            max-width: 100%;
+            position: relative;
+            height: 10px;
 
-            @media screen and (max-width: 767px) {
-                display: flex;
-                flex-direction: column-reverse;
-                margin-bottom: 0;
-            }
-
-            .service-container {
-                padding: 70px 70px 0px 37px;
-                align-items: flex-start;
-
-                @media screen and (max-width:1279px) {
-                    padding: 60px 0px 0px 0px;
-                }
-
-                @media screen and (max-width: 767px) {
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 25px 77px 0;
-                }
-
-                div {
-                    text-align: center;
-
-                    .policy-img-cont {
-                        max-width: 100%;
-
-                        img {
-                            width: unset;
-                        }
-                    }
-
-                    h4 {
-                        font: 600 14px/30px @poppins;
-                        color: @primary-font-color;
-                    }
-
-                    .detailed-txt {
-                        font: italic 11px/15px @poppins;
-                        color: @primary-font-color;
-                    }
-
-                    a {
-                        font: italic 10px/15px @poppins;
-                        color: #E04726;
-                    }
-                }
-
-                .help-center-cont {
-                    margin: 0px 50px;
-
-                    @media screen and (max-width:1023px) {
-                        margin: 0px 35px;
-                    }
-
-                    @media screen and (max-width:767px) {
-                        margin: 50px 0px;
-                    }
-                }
-            }
-
-            .order-summary-tab-mob {
-                display: none;
-
-                @media screen and (max-width:980px) {
-                    display: block;
-                }
-
-                .container {
-                    padding: 7px 20px 7px 10px;
-                    margin-top: 70px;
-                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-                    border: 1px solid #BFBFBF;
-
-                    @media screen and (max-width: 767px) {
-                        margin-top: 0;
-
-                    }
-
-                    .product-det {
-                        .prod-img {
-                            max-width: 100%;
-                            height: auto;
-                            margin-right: 14.7px;
-
-                            @media screen and (max-width:320px) {
-                                margin-right: 7px;
-
-                            }
-
-                            img {
-                                width: 43px;
-                                height: 46px;
-                            }
-                        }
-
-                        .count-details {
-                            h3 {
-                                font: bold 16px/25px @poppins;
-                                color: @primary-font-color;
-                            }
-
-                            a {
-                                font: normal 12px/22px @poppins;
-                                color: @primary-font-color;
-                            }
-                        }
-                    }
-
-                    .grand-tot {
-                        h2 {
-                            font: bold 26px/18px @poppins;
-                            color: #009191;
-
-                            @media screen and (max-width: 320px) {
-                                font: bold 18px/18px @poppins;
-                            }
-                        }
-                    }
-                }
+            img {
+                height: 10px;
             }
         }
     }
 
-    .right-side-content {
-        background-color: #EEEEEE;
+    .body-container {
+        display: flex;
 
-        @media screen and (max-width: 980px) {
-            display: none;
-        }
+        .left-side-content {
+            flex-basis: 73.5%;
+            padding: 40px 42px 57px 46px;
 
-        .order-summary {
-            .summary-container {
-                padding: 60px 65px 0px 40px;
+            @media screen and (max-width:1279px) {
+                padding: 40px 30px 50px;
+            }
 
-                .heading {
-                    padding-bottom: 14px;
-                    border-bottom: 1px solid;
-                    margin-bottom: 20px;
+            @media screen and (max-width:1023px) {
+                padding: 20px 17px 70px;
+            }
 
-                    h2 {
-                        font: normal 24px/22px @rokkit;
-                        color: @secondary-font-color;
+            @media screen and (max-width:980px) {
+                flex-basis: 100%;
+            }
+
+            @media screen and (max-width:767px) {
+                padding: 30px 20px;
+            }
+
+            @media screen and (max-width:375px) {
+                padding: 30px 10px;
+            }
+
+
+            .shipping-sec {
+
+                &>div {
+                    padding: 31px 0px 30px;
+                    border-bottom: 1px solid @primary-font-color;
+
+                    @media screen and (max-width:767px) {
+                        padding: 25px 0px;
+
                     }
 
-                    a {
-                        font: normal 12px/22px @poppins;
-                        color: @primary-font-color;
+                    .heading-sec {
+                        justify-content: flex-start;
+
+                        .serial-no {
+                            background-color: @secondary-font-color;
+                            height: 38px;
+                            width: $height;
+                            border-radius: 50%;
+                            justify-content: center;
+                            margin-right: 15px;
+
+                            span {
+                                font: bold 20px/32px @rokkit;
+                                color: @primary-color;
+                            }
+                        }
+
+                        .heading-txt {
+                            font: bold 24px/35px @rokkit;
+                            color: @primary-font-color;
+                        }
+
                     }
                 }
 
-                .inner-content {
-                    .item-count {
-                        font: bold 18px/27px @poppins;
-                        color: @primary-font-color;
+                &>.opened {
+
+                    .hided-content {
+                        padding: 22px 0px 0px 20px;
+
+                        @media screen and (max-width:767px) {
+                            padding: 22px 0px 0px 0px;
+                        }
+                    }
+                }
+
+                .customer-detail {
+                    padding-left: 10px;
+
+                    @media screen and (max-width: 767px) {
+                        padding-left: 0;
+                        padding-top: 0;
                     }
 
-                    .product {
-                        padding: 20px 0px 20px;
-                        border-bottom: 1px solid @primary-font-color;
+                    .hided-content {
+                        .ckt-as-guest {
+                            font: normal 16px/24px @poppins;
+                            color: @primary-font-color;
 
-                        .product-body {
-                            .prd-image {
+                            @media screen and (max-width: 1023px) {
+                                padding-right: 62px;
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                padding-right: 0;
+                                font: normal 14px/22px @poppins;
+                            }
+                        }
+
+                        .mail-inputs {
+                            margin: 23px 0px 37px;
+
+                            @media screen and (max-width:767px) {
+                                margin: 20px 0px;
+                            }
+
+                            .mail-label {
+                                font: bold 14px/20px @poppins;
+                                color: @secondary-font-color;
+                                letter-spacing: 1px;
+
+                                @media screen and (max-width: 767px) {
+                                    font: bold 12x/20px @poppins;
+
+                                }
+                            }
+
+                            .email-input-box {
+                                width: 33.5%;
+                                height: 40px;
+                                border: 1px solid #C7C7C7;
+                                margin-right: 10px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+
+                                @media screen and (max-width: 1279px) {
+                                    width: 40.5%;
+                                }
+
+                                @media screen and (max-width: 1023px) {
+                                    width: 48.2%;
+                                }
+
+                                @media screen and (max-width: 500px) {
+                                    width: 100%;
+                                    margin-right: 0;
+                                    margin-bottom: 15px;
+                                }
+                            }
+
+                            .continue-btn {
+                                text-decoration: none;
+                                font: bold 16px/21px @rokkit;
+                                color: @primary-color;
+                                padding: 11px 24px;
+                                background-color: #009191;
+
+                                @media screen and (max-width: 1279px) {
+                                    padding: 11px 12px;
+                                }
+
+                                @media screen and (max-width: 1023px) {
+                                    padding: 11px 24px;
+                                }
+
+
+                            }
+
+                            div {
+                                justify-content: flex-start;
+
+                                @media screen and (max-width:767px) {
+                                    margin-top: 20px;
+                                }
+
+                                .newsltr-ceckbox {
+                                    height: 16px;
+                                    width: $height;
+                                    margin-right: 10px;
+                                }
+
+                                .newsltr-sbrc {
+                                    font: normal 14px/40px @poppins;
+                                    color: @primary-font-color;
+
+                                    @media screen and (max-width:767px) {
+                                        font: normal 14px/35px @poppins;
+                                    }
+                                }
+                            }
+                        }
+
+                        .exist-user-login {
+                            font: bold 16px/35px @poppins;
+                            color: @primary-font-color;
+
+                            @media screen and (max-width:767px) {
+                                font: bold 14px/35px @poppins;
+                            }
+
+                            a {
+                                color: #009191;
+                            }
+                        }
+                    }
+                }
+
+                .payment-detail {
+                    border: none;
+                }
+            }
+
+            .other-services {
+                margin-bottom: 57px;
+
+                @media screen and (max-width:980px) {
+                    margin-bottom: 129px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-bottom: 0;
+                }
+
+                .service-container {
+                    padding: 70px 70px 0px 37px;
+                    align-items: flex-start;
+
+                    @media screen and (max-width:1279px) {
+                        padding: 60px 0px 0px 0px;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 25px 77px 0;
+                    }
+
+                    div {
+                        text-align: center;
+
+                        .policy-img-cont {
+                            max-width: 100%;
+
+                            img {
+                                width: unset;
+                            }
+                        }
+
+                        h4 {
+                            font: 600 14px/30px @poppins;
+                            color: @primary-font-color;
+                        }
+
+                        .detailed-txt {
+                            font: italic 11px/15px @poppins;
+                            color: @primary-font-color;
+                        }
+
+                        a {
+                            font: italic 10px/15px @poppins;
+                            color: #E04726;
+                        }
+                    }
+
+                    .help-center-cont {
+                        margin: 0px 50px;
+
+                        @media screen and (max-width:1023px) {
+                            margin: 0px 35px;
+                        }
+
+                        @media screen and (max-width:767px) {
+                            margin: 50px 0px;
+                        }
+                    }
+                }
+
+                .order-summary-tab-mob {
+                    display: none;
+
+                    @media screen and (max-width:980px) {
+                        display: block;
+                        position: fixed;
+                        left: 50%;
+                        bottom: 79px;
+                        transform: translateX(-50%);
+                        width: 97%;
+                        height: 60px;
+                    }
+
+                    @media screen and (max-width:620px) {
+                        bottom: 20px;
+                        width: 95%;
+                    }
+
+
+                    .container {
+                        padding: 7px 20px 7px 10px;
+                        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                        border: 1px solid #BFBFBF;
+                        background-color: @primary-color;
+
+                        .product-det {
+                            .prod-img {
                                 max-width: 100%;
-                                height: 55px;
+                                height: auto;
+                                margin-right: 14.7px;
+
+                                @media screen and (max-width:320px) {
+                                    margin-right: 7px;
+
+                                }
 
                                 img {
-                                    width: 50px;
+                                    width: 43px;
+                                    height: 46px;
+                                }
+                            }
+
+                            .count-details {
+                                h3 {
+                                    font: bold 16px/25px @poppins;
+                                    color: @primary-font-color;
+                                }
+
+                                a {
+                                    font: normal 12px/22px @poppins;
+                                    color: @primary-font-color;
+                                }
+                            }
+                        }
+
+                        .grand-tot {
+                            h2 {
+                                font: bold 26px/18px @poppins;
+                                color: #009191;
+
+                                @media screen and (max-width: 320px) {
+                                    font: bold 18px/18px @poppins;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-side-content {
+            background-color: #EEEEEE;
+
+            @media screen and (max-width: 980px) {
+                display: none;
+            }
+
+            .order-summary {
+                .summary-container {
+                    padding: 60px 65px 0px 40px;
+
+                    .heading {
+                        padding-bottom: 14px;
+                        border-bottom: 1px solid;
+                        margin-bottom: 20px;
+
+                        h2 {
+                            font: normal 24px/22px @rokkit;
+                            color: @secondary-font-color;
+                        }
+
+                        a {
+                            font: normal 12px/22px @poppins;
+                            color: @primary-font-color;
+                        }
+                    }
+
+                    .inner-content {
+                        .item-count {
+                            font: bold 18px/27px @poppins;
+                            color: @primary-font-color;
+                        }
+
+                        .product {
+                            padding: 20px 0px 20px;
+                            border-bottom: 1px solid @primary-font-color;
+
+                            .product-body {
+                                .prd-image {
+                                    max-width: 100%;
                                     height: 55px;
+
+                                    img {
+                                        width: 50px;
+                                        height: 55px;
+                                    }
+                                }
+
+                                .prd-details {
+                                    margin: 0px 19px 0px 12px;
+
+                                    .prd-name {
+                                        font: bold 14px/14px @rokkit;
+                                        color: #292929;
+                                    }
+
+                                    .color-cont {
+                                        margin-top: 3px;
+                                    }
+
+                                    &>div {
+                                        span {
+                                            font: normal 10px/14px @poppins;
+                                            color: @primary-font-color;
+                                        }
+
+                                        p {
+                                            font: bold 10px/14px @poppins;
+                                            color: @primary-font-color;
+                                        }
+                                    }
+                                }
+
+                                .price-details {
+                                    .price-txt {
+                                        font: normal 16px/18px @poppins;
+                                        color: @primary-font-color;
+                                    }
                                 }
                             }
 
-                            .prd-details {
-                                margin: 0px 19px 0px 12px;
+                        }
 
-                                .prd-name {
-                                    font: bold 14px/14px @rokkit;
-                                    color: #292929;
+                        .cost-div {
+                            padding: 20px 0px 0px;
+
+                            &>div {
+                                margin-bottom: 15px;
+
+                                .left-label {
+                                    font: bold 14px/18px @poppins;
+                                    color: @primary-font-color;
                                 }
 
-                                .color-cont {
-                                    margin-top: 3px;
-                                }
-
-                                &>div {
-                                    span {
-                                        font: normal 10px/14px @poppins;
-                                        color: @primary-font-color;
-                                    }
-
-                                    p {
-                                        font: bold 10px/14px @poppins;
-                                        color: @primary-font-color;
-                                    }
-                                }
-                            }
-
-                            .price-details {
-                                .price-txt {
+                                .right-price {
                                     font: normal 16px/18px @poppins;
                                     color: @primary-font-color;
                                 }
                             }
                         }
 
-                    }
+                        .coupon-div {
+                            padding-bottom: 15px;
+                            border-bottom: 1px solid @primary-font-color;
 
-                    .cost-div {
-                        padding: 20px 0px 0px;
-
-                        &>div {
-                            margin-bottom: 15px;
-
-                            .left-label {
+                            a {
                                 font: bold 14px/18px @poppins;
                                 color: @primary-font-color;
                             }
+                        }
+                    }
 
-                            .right-price {
-                                font: normal 16px/18px @poppins;
+                    .bottom-cont {
+                        padding-top: 25px;
+
+                        .grand-total {
+                            .total-txt {
+                                font: bold 16px/18px @poppins;
                                 color: @primary-font-color;
                             }
-                        }
-                    }
 
-                    .coupon-div {
-                        padding-bottom: 15px;
-                        border-bottom: 1px solid @primary-font-color;
-
-                        a {
-                            font: bold 14px/18px @poppins;
-                            color: @primary-font-color;
-                        }
-                    }
-                }
-
-                .bottom-cont {
-                    padding-top: 25px;
-
-                    .grand-total {
-                        .total-txt {
-                            font: bold 16px/18px @poppins;
-                            color: @primary-font-color;
-                        }
-
-                        .total-amt {
-                            font: bold 26px/18px @poppins;
-                            color: #009191;
+                            .total-amt {
+                                font: bold 26px/18px @poppins;
+                                color: #009191;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 
-.footer {
-    position: relative;
+    .footer {
+        position: relative;
 
-    @media screen and (max-width: 1023px) {
-        display: none;
-    }
-
-    @media screen and (max-width: 767px) {
-        display: block;
-    }
-
-    .footer-container {
-        padding-left: 44px;
-        position: absolute;
-        bottom: 18px;
-
-        @media screen and (max-width: 767px) {
-            position: unset;
-            text-align: center;
-            padding: 0;
+        @media screen and (max-width: 1023px) {
+            display: none;
         }
 
-        .copy-right {
-            font: normal 10px/24px @poppins;
-            color: @primary-font-color;
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
 
-            @media screen and (max-width:767px) {
-                padding: 13px 0px 60px;
+        .footer-container {
+            padding-left: 44px;
+            position: absolute;
+            bottom: 18px;
 
+            @media screen and (max-width: 767px) {
+                position: unset;
+                text-align: center;
+                padding: 0;
+            }
+
+            .copy-right {
+                font: normal 10px/24px @poppins;
+                color: @primary-font-color;
+
+                @media screen and (max-width:767px) {
+                    padding: 13px 0px 60px;
+
+                }
             }
         }
     }
