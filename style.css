@@ -240,6 +240,11 @@ img {
     padding: 30px 20px;
   }
 }
+@media screen and (max-width: 375px) {
+  .body-container .left-side-content {
+    padding: 20px 10px;
+  }
+}
 .body-container .left-side-content .shipping-sec > div {
   padding: 31px 0px 30px;
   border-bottom: 1px solid #000000;
